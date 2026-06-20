@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Stash Spot Co.</title>
+  <meta name="description" content="Secure checkout.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <noscript><style>body{opacity:1!important}</style></noscript>
+</head>
+<body data-page="checkout">
+  <header id="site-header"></header>
+  <main class="wrap">
+    <div class="page-head" style="border-bottom:0">
+      <nav class="breadcrumbs"><a href="cart.html">Bag</a> / Checkout</nav>
+      <h1>Checkout</h1>
+    </div>
+
+    <div class="checkout">
+      <div>
+        <form id="checkout-form">
+          <div class="panel">
+            <h2>Contact</h2>
+            <div class="field"><label>Email</label><input type="email" autocomplete="email" required></div>
+          </div>
+          <div class="panel">
+            <h2>Shipping address</h2>
+            <div class="field"><label>Full name</label><input autocomplete="name" required></div>
+            <div class="field"><label>Address</label><input autocomplete="street-address" required></div>
+            <div class="field-row">
+              <div class="field"><label>City</label><input autocomplete="address-level2" required></div>
+              <div class="field"><label>Postal code</label><input autocomplete="postal-code" required></div>
+            </div>
+            <div class="field"><label>Country</label>
+              <select>
+                <option>Switzerland</option><option>Germany</option><option>Austria</option><option>France</option><option>Italy</option>
+              </select>
+            </div>
+          </div>
+          <div class="panel">
+            <h2>Payment</h2>
+            <div class="field"><label>Card number</label><input inputmode="numeric" placeholder="1234 5678 9012 3456" required></div>
+            <div class="field-row">
+              <div class="field"><label>Expiry</label><input placeholder="MM / YY" required></div>
+              <div class="field"><label>CVC</label><input placeholder="123" required></div>
+            </div>
+            <button class="btn btn--block" type="submit" style="margin-top:8px">Pay now</button>
+            <p class="news-note" style="color:var(--muted);margin-top:12px">Demo store — no real payment is processed.</p>
+          </div>
+        </form>
+      </div>
+      <div id="order-summary"></div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
