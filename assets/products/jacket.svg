@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Jacket placeholder">
+  <rect width="800" height="1000" fill="#edf0f2"/>
+  <path d="M255 180l145-70 155 70 90 120 70 420c10 70-50 132-120 132H215c-70 0-130-62-120-132l70-420 90-120Z" fill="#2a2d31"/>
+  <path d="M290 210h220l-35 200H325l-35-200Z" fill="#3b3e42"/>
+  <path d="M300 830l110-150h-40V480h-70v200l-110 150Z" fill="#43474b"/>
+  <path d="M500 830L390 680h40V480h70v200l110 150Z" fill="#43474b"/>
+  <circle cx="400" cy="260" r="16" fill="#d9d6d0"/>
+  <path d="M310 200l90-90h-40l-50 90ZM490 200l-90-90h40l50 90Z" fill="#1d1f22"/>
+  <text x="400" y="900" text-anchor="middle" font-size="48" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#f5f5f3" letter-spacing="6">JACKET</text>
+</svg>

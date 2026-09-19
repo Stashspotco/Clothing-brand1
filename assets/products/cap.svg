@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Cap placeholder">
+  <rect width="800" height="1000" fill="#f4f0ea"/>
+  <path d="M165 360c40-110 130-160 235-160s195 50 235 160l-120 80H285l-120-80Z" fill="#d8d1c8"/>
+  <path d="M210 420h380l-70 160H280l-70-160Z" fill="#c3b9ac"/>
+  <path d="M280 560h240l-28 115H308l-28-115Z" fill="#b7a998"/>
+  <path d="M320 350l-60-45M480 350l60-45" stroke="#7b7167" stroke-width="20" stroke-linecap="round"/>
+  <text x="400" y="885" text-anchor="middle" font-size="48" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#2a2a2a" letter-spacing="6">CAP</text>
+</svg>

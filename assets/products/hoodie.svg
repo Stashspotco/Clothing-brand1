@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Hoodie placeholder">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2327"/>
+      <stop offset="50%" stop-color="#5a5f66"/>
+      <stop offset="100%" stop-color="#d9d4cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="#f2efe9"/>
+  <rect x="70" y="80" width="660" height="840" rx="36" fill="url(#g1)" opacity="0.12"/>
+  <path d="M230 250h340l60 255v230c0 44-36 80-80 80H250c-44 0-80-36-80-80V505l60-255ZM190 500l120-80h180l120 80" fill="#1d1e20" opacity="0.94"/>
+  <path d="M300 240c20-52 60-74 100-74s80 22 100 74l-30 20c-12-20-33-30-70-30s-58 10-70 30l-30-20Z" fill="#1d1e20"/>
+  <rect x="245" y="305" width="120" height="220" rx="15" fill="#1d1e20" opacity="0.7"/>
+  <rect x="435" y="305" width="120" height="220" rx="15" fill="#1d1e20" opacity="0.7"/>
+  <rect x="345" y="505" width="110" height="165" rx="18" fill="#1d1e20" opacity="0.8"/>
+  <text x="400" y="865" text-anchor="middle" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#1d1e20" letter-spacing="8">HOODIE</text>
+</svg>

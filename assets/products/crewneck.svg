@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Crewneck placeholder">
+  <rect width="800" height="1000" fill="#f3f0ee"/>
+  <path d="M240 240l120-90h80l120 90 85 80v155h-70v250c0 60-50 110-110 110H335c-60 0-110-50-110-110V475h-70V320l85-80Z" fill="#b4b1ad"/>
+  <rect x="300" y="330" width="200" height="150" rx="18" fill="#c8c4bf"/>
+  <rect x="240" y="475" width="90" height="220" rx="18" fill="#cdc9c4"/>
+  <rect x="470" y="475" width="90" height="220" rx="18" fill="#cdc9c4"/>
+  <text x="400" y="885" text-anchor="middle" font-size="46" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#2a2a2a" letter-spacing="4">CREWNECK</text>
+</svg>
