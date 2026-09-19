@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Jeans placeholder">
+  <rect width="800" height="1000" fill="#eef2f3"/>
+  <path d="M260 160h280l50 120 80 540c12 80-50 150-130 150H260c-80 0-142-70-130-150l80-540 50-120Z" fill="#7d8d96"/>
+  <path d="M315 170h170l-20 110H335l-20-110Z" fill="#dbe5ea"/>
+  <rect x="255" y="310" width="90" height="335" rx="18" fill="#9ca8af"/>
+  <rect x="455" y="310" width="90" height="335" rx="18" fill="#9ca8af"/>
+  <path d="M320 770L220 930M480 770L580 930" stroke="#70808b" stroke-width="24" stroke-linecap="round"/>
+  <text x="400" y="895" text-anchor="middle" font-size="46" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#24313a" letter-spacing="6">JEANS</text>
+</svg>

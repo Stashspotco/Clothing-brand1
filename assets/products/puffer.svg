@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Puffer placeholder">
+  <rect width="800" height="1000" fill="#edf0f3"/>
+  <path d="M200 305l95-80h210l95 80 110 55v240c0 90-75 165-165 165H255c-90 0-165-75-165-165V360l110-55Z" fill="#c4ccd3"/>
+  <path d="M300 260h200l-40 120H340l-40-120Z" fill="#b1bac4"/>
+  <rect x="250" y="390" width="100" height="235" rx="18" fill="#d5dce2"/>
+  <rect x="450" y="390" width="100" height="235" rx="18" fill="#d5dce2"/>
+  <path d="M305 420h190l-14 160H319l-14-160Z" fill="#e3e8ed"/>
+  <path d="M300 760l115-160h-30V515h-85v85l-100 160Z" fill="#b3bdc8"/>
+  <path d="M500 760L385 600h30V515h85v85l100 160Z" fill="#b3bdc8"/>
+  <text x="400" y="895" text-anchor="middle" font-size="46" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#2a2d31" letter-spacing="5">PUFFER</text>
+</svg>

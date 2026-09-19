@@ -24,51 +24,50 @@
     { slug: "accessories", label: "Accessories" }
   ];
 
-  // ── YOUR OWN PHOTOS ──────────────────────────────────────────────
-  // Map a product id -> image(s) in the PHOTOS object below (defined under RAW).
-  // One image per product is enough; add more to the array for a bigger gallery.
-  // Local files: drop them in assets/products/ next to your HTML and reference
-  // them by relative path. Full https:// URLs also work. Any product with no
-  // entry falls back to the keyword stock photo.
   const RAW = [
-    { id: 1, name: "Heavyweight Hoodie", cat: "Hoodies", slug: "hoodies", price: 89, tags: ["bestseller", "featured"], sizes: SIZES_TOP, desc: "A 480gsm loopback cotton hoodie with a boxy fit, double-lined hood and clean tonal embroidery." },
-    { id: 2, name: "Boxy Logo Tee", cat: "Tees", slug: "tees", price: 39, tags: ["new", "bestseller"], sizes: SIZES_TOP, desc: "Mid-weight organic cotton tee with a relaxed, dropped-shoulder cut and a soft hand-feel." },
-    { id: 3, name: "Tech Cargo Pant", cat: "Pants", slug: "pants", price: 99, tags: ["new"], sizes: SIZES_BOTTOM, desc: "Water-repellent ripstop cargos with articulated knees and a tapered, adjustable hem." },
-    { id: 4, name: "Shell Jacket", cat: "Outerwear", slug: "outerwear", price: 149, tags: ["featured"], sizes: SIZES_TOP, desc: "A minimal 3-layer shell. Fully taped seams, storm hood and a clean matte finish." },
-    { id: 5, name: "Ribbed Beanie", cat: "Accessories", slug: "accessories", price: 29, tags: ["bestseller"], sizes: SIZE_ONE, desc: "Fine-gauge merino-blend beanie. Warm, lightweight and built to keep its shape." },
-    { id: 6, name: "Oversized Crewneck", cat: "Hoodies", slug: "hoodies", price: 79, tags: ["new"], sizes: SIZES_TOP, desc: "Heavy brushed-back fleece crew with ribbed cuffs and a generous, modern silhouette." },
+    { id: 1, name: "Heavyweight Hoodie", cat: "Hoodies", slug: "hoodies", price: 89, tags: ["bestseller", "featured"], sizes: SIZES_TOP, desc: "A 480gsm loopback cotton hoodie with a boxy fit, dropped shoulders and a clean premium finish." },
+    { id: 2, name: "Boxy Logo Tee", cat: "Tees", slug: "tees", price: 39, tags: ["new", "bestseller"], sizes: SIZES_TOP, desc: "Mid-weight organic cotton tee with a relaxed, dropped-shoulder cut and understated branding." },
+    { id: 3, name: "Tech Cargo Pant", cat: "Pants", slug: "pants", price: 99, tags: ["new"], sizes: SIZES_BOTTOM, desc: "Water-repellent ripstop cargos with articulated knees and a tapered, adjustable leg." },
+    { id: 4, name: "Shell Jacket", cat: "Outerwear", slug: "outerwear", price: 149, tags: ["featured"], sizes: SIZES_TOP, desc: "A minimal 3-layer shell. Fully taped seams, storm hood and a clean utility silhouette." },
+    { id: 5, name: "Ribbed Beanie", cat: "Accessories", slug: "accessories", price: 29, tags: ["bestseller"], sizes: SIZE_ONE, desc: "Fine-gauge merino-blend beanie. Warm, lightweight and built to layer effortlessly." },
+    { id: 6, name: "Oversized Crewneck", cat: "Hoodies", slug: "hoodies", price: 79, tags: ["new"], sizes: SIZES_TOP, desc: "Heavy brushed-back fleece crew with ribbed cuffs and a generous, modern cut." },
     { id: 7, name: "Washed Graphic Tee", cat: "Tees", slug: "tees", price: 42, tags: [], sizes: SIZES_TOP, desc: "Garment-dyed tee with a soft vintage wash and a screen-printed back graphic." },
-    { id: 8, name: "Puffer Vest", cat: "Outerwear", slug: "outerwear", price: 119, tags: ["new", "featured"], sizes: SIZES_TOP, desc: "Recycled-fill puffer vest with a matte ripstop face and a high funnel collar." },
-    { id: 9, name: "5-Panel Cap", cat: "Accessories", slug: "accessories", price: 34, tags: ["bestseller"], sizes: SIZE_ONE, desc: "Structured 5-panel cap in washed cotton twill with an adjustable webbing strap." },
+    { id: 8, name: "Puffer Vest", cat: "Outerwear", slug: "outerwear", price: 119, tags: ["new", "featured"], sizes: SIZES_TOP, desc: "Recycled-fill puffer vest with a matte ripstop face and a high-utility front zip." },
+    { id: 9, name: "5-Panel Cap", cat: "Accessories", slug: "accessories", price: 34, tags: ["bestseller"], sizes: SIZE_ONE, desc: "Structured 5-panel cap in washed cotton twill with an adjustable back tab." },
     { id: 10, name: "Relaxed Denim", cat: "Pants", slug: "pants", price: 109, tags: [], sizes: SIZES_BOTTOM, desc: "Rigid 13oz selvedge-style denim with a relaxed straight leg that breaks in over time." },
     { id: 11, name: "Knit Scarf", cat: "Accessories", slug: "accessories", price: 38, tags: ["new"], sizes: SIZE_ONE, desc: "Chunky lambswool-blend scarf in a tight rib. Soft, dense and properly warm." },
-    { id: 12, name: "Full-Zip Hoodie", cat: "Hoodies", slug: "hoodies", price: 95, tags: ["featured", "bestseller"], sizes: SIZES_TOP, desc: "Heavyweight full-zip with a YKK puller, split kangaroo pocket and a clean stand collar." }
+    { id: 12, name: "Full-Zip Hoodie", cat: "Hoodies", slug: "hoodies", price: 95, tags: ["featured", "bestseller"], sizes: SIZES_TOP, desc: "Heavyweight full-zip with a YKK puller, split kangaroo pocket and refined hardware." }
   ];
 
-  // Your photos, keyed by product id. Edit paths/URLs or add more per array.
   const PHOTOS = {
-    1: ["assets/products/hoodie.webp"],   // Heavyweight Hoodie
-    2: ["assets/products/tee.webp"],      // Boxy Logo Tee
-    3: ["assets/products/cargo.webp"],    // Tech Cargo Pant
-    4: ["assets/products/jacket.webp"],   // Shell Jacket
-    5: ["assets/products/beanie.webp"],   // Ribbed Beanie
-    6: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-9ji0RAms5JfE_6WP-TWwRPpWq25K717GMvGT5GVUQ&s=10"], // Oversized Crewneck
-    7: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7mfhbE3piDrxmtHcmCeFxN0TDS2sVAok6iZDuR88Cw&s"]     // Washed Graphic Tee
+    1: ["assets/products/hoodie.svg"],
+    2: ["assets/products/tee.svg"],
+    3: ["assets/products/cargo.svg"],
+    4: ["assets/products/jacket.svg"],
+    5: ["assets/products/beanie.svg"],
+    6: ["assets/products/crewneck.svg"],
+    7: ["assets/products/graphic-tee.svg"],
+    8: ["assets/products/puffer.svg"],
+    9: ["assets/products/cap.svg"],
+    10: ["assets/products/jeans.svg"],
+    11: ["assets/products/scarf.svg"],
+    12: ["assets/products/zip-hoodie.svg"]
   };
 
-  const PHOTO_KW = { 1: "man,hoodie", 2: "man,tshirt", 3: "man,streetwear", 4: "man,jacket", 5: "man,beanie", 6: "man,sweatshirt", 7: "woman,tshirt", 8: "man,jacket", 9: "man,cap", 10: "man,jeans", 11: "woman,scarf", 12: "man,hoodie" };
+  const PHOTO_KW = { 1: "hoodie", 2: "tshirt", 3: "cargo", 4: "jacket", 5: "beanie", 6: "crewneck", 7: "tshirt", 8: "puffer", 9: "cap", 10: "jeans", 11: "scarf", 12: "hoodie" };
+
   const PRODUCTS = RAW.map(p => ({
     ...p,
     colors: COLORS,
-    images: p.images || PHOTOS[p.id] || [1, 2, 3].map(n => `https://loremflickr.com/800/1000/${PHOTO_KW[p.id] || "clothing"}?lock=${p.id * 7 + n}`),
+    images: p.images || PHOTOS[p.id] || ["assets/products/placeholder.svg"],
     material: "Composition: 100% cotton (where applicable). Designed in Switzerland, ethically made in Portugal.",
     shipping: "Free carbon-neutral shipping over CHF 80. Delivered in 2–5 working days. 30-day free returns."
   }));
 
   const COLLECTIONS = [
-    { label: "Hoodies & Knits", slug: "hoodies", eyebrow: "Warm layers", img: "https://loremflickr.com/800/1000/man,hoodie?lock=21" },
-    { label: "Outerwear", slug: "outerwear", eyebrow: "Built for weather", img: "https://loremflickr.com/800/1000/man,jacket?lock=22" },
-    { label: "Accessories", slug: "accessories", eyebrow: "Finish the fit", img: "https://loremflickr.com/800/1000/woman,beanie?lock=23" }
+    { label: "Hoodies & Knits", slug: "hoodies", eyebrow: "Warm layers", img: "assets/products/hoodie.svg" },
+    { label: "Outerwear", slug: "outerwear", eyebrow: "Built for weather", img: "assets/products/jacket.svg" },
+    { label: "Accessories", slug: "accessories", eyebrow: "Finish the fit", img: "assets/products/beanie.svg" }
   ];
 
   const REVIEWS = [
@@ -85,7 +84,7 @@
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const money = n => "CHF " + Number(n).toFixed(2);
   const byId = id => PRODUCTS.find(p => p.id === Number(id));
-  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const esc = s => String(s).replace(/[&<>\"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const param = k => new URLSearchParams(location.search).get(k);
   const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -109,6 +108,7 @@
     const tax = +((sub - disc) * TAX).toFixed(2);
     return { sub, disc, ship, tax, total: (sub - disc) + ship + tax };
   }
+
   const cartCount = () => cart.reduce((s, i) => s + i.qty, 0);
   function deliveryRange() {
     const fmt = d => d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
@@ -123,6 +123,7 @@
     renderCartDrawer();
     openCart();
   }
+
   function setQty(idx, q) { if (!cart[idx]) return; cart[idx].qty = q; if (cart[idx].qty <= 0) cart.splice(idx, 1); saveCart(); }
   function removeLine(idx) { cart.splice(idx, 1); saveCart(); }
 
@@ -137,7 +138,6 @@
     return true;
   }
 
-  /* ----------------------------- TOAST -------------------------------- */
   function toast(msg) {
     let wrap = $(".toast-wrap");
     if (!wrap) { wrap = document.createElement("div"); wrap.className = "toast-wrap"; document.body.appendChild(wrap); }
@@ -186,50 +186,6 @@
     document.body.prepend(fx);
   }
 
-  function buildCookieBanner(force) {
-    if (document.querySelector(".cookie-consent")) return;
-    if (!force) {
-      if (document.body.dataset.page !== "home") return;      // home page only
-      if (sessionStorage.getItem("ssc_cookie_seen")) return;  // once per browser session
-    }
-    try { sessionStorage.setItem("ssc_cookie_seen", "1"); } catch (e) {}
-    const el = document.createElement("div");
-    el.className = "cookie-consent";
-    el.setAttribute("role", "dialog");
-    el.setAttribute("aria-label", "Cookie consent");
-    el.innerHTML = `<div class="cc-card">
-      <h3>We value your privacy</h3>
-      <p>We use cookies to run the store, remember your bag, analyse traffic and improve your experience. You can accept all, reject non-essential, or choose what to allow. Read our <a href="cookies.html">Cookie Policy</a>.</p>
-      <div class="cc-prefs" hidden>
-        <label class="cc-opt"><span><b>Strictly necessary</b><small>Required for the site and checkout to work.</small></span><input type="checkbox" checked disabled aria-label="Strictly necessary (always on)"></label>
-        <label class="cc-opt"><span><b>Preferences</b><small>Remember your choices and settings.</small></span><input type="checkbox" data-cat="preferences"></label>
-        <label class="cc-opt"><span><b>Analytics</b><small>Help us understand how the site is used.</small></span><input type="checkbox" data-cat="analytics"></label>
-        <label class="cc-opt"><span><b>Marketing</b><small>Measure campaigns and show relevant content.</small></span><input type="checkbox" data-cat="marketing"></label>
-      </div>
-      <div class="cc-actions">
-        <button class="btn btn--ghost btn--sm" data-cc="reject">Reject all</button>
-        <button class="btn btn--ghost btn--sm" data-cc="manage">Manage preferences</button>
-        <button class="btn btn--sm" data-cc="accept">Accept all</button>
-      </div>
-      <div class="cc-save" hidden><button class="btn btn--sm btn--block" data-cc="save">Save preferences</button></div>
-    </div>`;
-    document.body.appendChild(el);
-    requestAnimationFrame(() => el.classList.add("show"));
-
-    const close = () => { el.classList.remove("show"); setTimeout(() => el.remove(), 320); };
-    const persist = prefs => {
-      store.set("ssc_cookie_consent", { necessary: true, preferences: !!prefs.preferences, analytics: !!prefs.analytics, marketing: !!prefs.marketing, ts: Date.now() });
-      close();
-    };
-    el.querySelector('[data-cc="accept"]').onclick = () => persist({ preferences: true, analytics: true, marketing: true });
-    el.querySelector('[data-cc="reject"]').onclick = () => persist({ preferences: false, analytics: false, marketing: false });
-    el.querySelector('[data-cc="manage"]').onclick = () => { el.querySelector(".cc-prefs").hidden = false; el.querySelector(".cc-save").hidden = false; };
-    el.querySelector('[data-cc="save"]').onclick = () => {
-      const on = c => el.querySelector(`input[data-cat="${c}"]`).checked;
-      persist({ preferences: on("preferences"), analytics: on("analytics"), marketing: on("marketing") });
-    };
-  }
-
   const LOGO = '<svg class="logo-mono" viewBox="0 40 280 120" role="img" aria-label="Stash Spot CO.">'
     + '<g fill="currentColor" font-weight="500" font-family="\'Playfair Display\',\'Didot\',\'Bodoni MT\',\'Hoefler Text\',\'Times New Roman\',serif">'
     + '<text x="86" y="152" font-size="150" text-anchor="middle">S</text>'
@@ -275,8 +231,8 @@
             <div class="brand brand-logo brand-lockup">${LOGO}<span class="brand-wm">Stash Spot Co.</span></div>
             <p>Considered streetwear in black, white and grey. Built heavy, finished clean, made to outlast the season.</p>
             <div class="foot-socials">
-              <a href="https://www.instagram.com/stash_spotco/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-              <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.5 3.5 3.8V10c-1.4 0-2.7-.4-3.8-1.1V15a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 .9.1v3.1a2.4 2.4 0 1 0 1.7 2.3V3H16Z"/></svg></a>
+              <a href="https://www.instagram.com/stash_spotco/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.5 3.5 3.8V10c-1.4 0-2.7-.4-3.8-1.1V15a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 .9.1V15A3.8 3.8 0 1 0 17.4 15V7.2c1 .3 1.8.8 2.6 1.6v2.3A6 6 0 0 1 16 3Z"/></svg></a>
               <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h4l4 5.5L16 4h4l-6.3 8L20 20h-4l-4.3-5.8L7 20H4l6.7-8.4L4 4Z"/></svg></a>
             </div>
           </div>
@@ -368,15 +324,13 @@
     box.querySelectorAll("[data-rm]").forEach(b => b.onclick = () => { removeLine(+b.dataset.rm); renderCartDrawer(); });
   }
 
-  /* ===================================================================
-     COMPONENTS — product card
-     =================================================================== */
   function badgeHTML(p) {
     const b = [];
     if (p.tags.includes("new")) b.push(`<span class="badge">New</span>`);
     if (p.tags.includes("bestseller")) b.push(`<span class="badge badge--soft">Best seller</span>`);
     return b.length ? `<div class="badges">${b.join("")}</div>` : "";
   }
+
   function cardHTML(p) {
     const wished = wishlist.includes(p.id) && getUser();
     return `<article class="card reveal">
@@ -396,11 +350,13 @@
       </div>
     </article>`;
   }
+
   function renderGrid(host, list) {
     host.innerHTML = list.map(cardHTML).join("");
     wireCards(host);
     observeReveals(host);
   }
+
   function wireCards(root) {
     root.querySelectorAll("[data-add]").forEach(b => b.addEventListener("click", e => {
       e.preventDefault();
@@ -415,9 +371,6 @@
     }));
   }
 
-  /* ===================================================================
-     PAGE: HOME
-     =================================================================== */
   function renderHome() {
     const col = $("#collections");
     if (col) col.innerHTML = COLLECTIONS.map(c => `
@@ -441,6 +394,7 @@
 
     observeReveals();
   }
+
   function reviewHTML(r) {
     return `<figure class="review reveal">
       <div class="stars">${"★".repeat(r.rating)}${"☆".repeat(5 - r.rating)}</div>
@@ -449,9 +403,6 @@
     </figure>`;
   }
 
-  /* ===================================================================
-     PAGE: SHOP
-     =================================================================== */
   let shopState = { cat: "all", tag: null, sort: "featured", q: "" };
   function renderShop() {
     const grid = $("#shop-grid"); if (!grid) return;
@@ -477,6 +428,7 @@
 
     drawShop();
   }
+
   function drawShop() {
     const grid = $("#shop-grid"); if (!grid) return;
     let list = PRODUCTS.slice();
@@ -493,9 +445,6 @@
     renderGrid(grid, list);
   }
 
-  /* ===================================================================
-     PAGE: PRODUCT
-     =================================================================== */
   function renderProduct() {
     const root = $("#product-root"); if (!root) return;
     const p = byId(param("id")) || PRODUCTS[0];
@@ -555,55 +504,45 @@
         <div class="grid" id="recent-grid"></div>
       </section>`;
 
-    // state
     let qty = 1, size = oneSize ? p.sizes[0] : null, color = p.colors[0].name;
-
-    // gallery
     const main = $("#pd-main", root);
     root.querySelectorAll("[data-thumb]").forEach(b => b.addEventListener("click", () => {
       root.querySelectorAll(".thumb").forEach(t => t.classList.remove("active")); b.classList.add("active");
       main.style.opacity = "0";
       setTimeout(() => { main.src = p.images[+b.dataset.thumb]; main.style.opacity = "1"; }, 160);
     }));
-    // colour
     root.querySelectorAll("[data-color]").forEach(b => b.addEventListener("click", () => {
       root.querySelectorAll("[data-color]").forEach(x => x.setAttribute("aria-pressed", "false"));
       b.setAttribute("aria-pressed", "true"); color = b.dataset.color; $("#pd-color", root).textContent = color;
     }));
-    // size
     root.querySelectorAll("[data-size]").forEach(b => b.addEventListener("click", () => {
       root.querySelectorAll("[data-size]").forEach(x => x.setAttribute("aria-pressed", "false"));
       b.setAttribute("aria-pressed", "true"); size = b.dataset.size;
     }));
-    // qty
     $("#pd-inc", root).onclick = () => { qty++; $("#pd-qty", root).textContent = qty; };
     $("#pd-dec", root).onclick = () => { qty = Math.max(1, qty - 1); $("#pd-qty", root).textContent = qty; };
-    // add
     $("#pd-add", root).onclick = () => {
       if (!size) { toast("Please select a size"); $(".sizes", root)?.animate?.([{ transform: "translateX(-4px)" }, { transform: "translateX(4px)" }, { transform: "none" }], { duration: 220 }); return; }
       addToCart(p.id, size, color, qty, main);
       toast(`${p.name} added to bag`);
     };
-    // wish
     $("#pd-wish", root).onclick = () => toggleWish(p.id, $("#pd-wish", root));
-    // size guide
     $("#size-guide", root).onclick = e => { e.preventDefault(); openSizeGuide(/^\d/.test(p.sizes[0]) ? "bottom" : "top"); };
-    // accordion
     wireAccordion(root);
 
-    // related
     let rel = PRODUCTS.filter(x => x.slug === p.slug && x.id !== p.id);
     if (rel.length < 4) rel = rel.concat(PRODUCTS.filter(x => x.id !== p.id && !rel.includes(x)));
     renderGrid($("#related", root), rel.slice(0, 4));
 
-    // recently viewed: show prior products, then record the current one
     renderRecent(root, p.id);
     pushRecent(p.id);
     observeReveals(root);
   }
+
   function accItem(title, body) {
     return `<div class="acc-item"><button class="acc-head">${esc(title)}<span class="pm">+</span></button><div class="acc-panel"><p>${esc(body)}</p></div></div>`;
   }
+
   function wireAccordion(root) {
     root.querySelectorAll(".acc-head").forEach(h => h.addEventListener("click", () => {
       const item = h.closest(".acc-item");
@@ -613,13 +552,10 @@
     }));
   }
 
-  /* ===================================================================
-     PAGE: CART
-     =================================================================== */
   function renderCartPage() {
     const root = $("#cart-page"); if (!root) return;
     if (!cart.length) {
-      root.innerHTML = `<div class="empty-state"><h2 style="font-size:28px">Your bag is empty</h2><p style="margin:10px 0 22px">Nothing here yet — let’s fix that.</p><a class="btn" href="shop.html">Shop the collection</a></div>`;
+      root.innerHTML = `<div class="empty-state"><h2 style="font-size:28px">Your bag is empty</h2><p style="margin:10px 0 22px">Nothing here yet — let’s fix that.</p><a class="btn" href="shop.html">Continue shopping</a></div>`;
       return;
     }
     const t = totals(cart);
@@ -682,9 +618,6 @@
     observeReveals(root);
   }
 
-  /* ===================================================================
-     PAGE: CHECKOUT
-     =================================================================== */
   function renderCheckout() {
     const sum = $("#order-summary"); if (!sum) return;
     if (!cart.length) { sum.closest("main")?.classList.add("ssc-empty"); }
@@ -711,18 +644,16 @@
       if (!cart.length) { toast("Your bag is empty"); return; }
       cart = []; store.set("ssc_cart", cart); store.set("ssc_promo", 0); updateCartCount();
       const main = $("main");
-      main.innerHTML = `<div class="wrap"><div class="empty-state" style="padding:120px 0"><span class="eyebrow">Thank you</span><h1 style="font-size:clamp(34px,5vw,56px);margin:12px 0">Order confirmed</h1><p style="margin-bottom:24px">A confirmation has been sent to your email. Your pieces are on the way.</p><a class="btn" href="shop.html">Continue shopping</a></div></div>`;
+      main.innerHTML = `<div class="wrap"><div class="empty-state" style="padding:120px 0"><span class="eyebrow">Thank you</span><h1 style="font-size:clamp(34px,5vw,56px);margin:12px 0">Order confirmed</h1><p style="color:var(--muted);max-width:44ch;margin:0 auto 22px">Your items are now being packed and will be on the way soon.</p><a class="btn" href="shop.html">Continue shopping</a></div></div>`;
     });
     observeReveals();
   }
 
-  /* ===================================================================
-     PAGE: ACCOUNT
-     =================================================================== */
   function renderAccount() {
     const root = $("#account-root"); if (!root) return;
     getUser() ? renderDashboard(root) : renderAuth(root);
   }
+
   function renderAuth(root) {
     root.innerHTML = `
       <div class="auth reveal">
@@ -763,6 +694,7 @@
     });
     observeReveals(root);
   }
+
   function renderDashboard(root) {
     const u = getUser();
     const wished = PRODUCTS.filter(p => wishlist.includes(p.id));
@@ -783,13 +715,13 @@
     const view = $("#acct-view", root);
     const views = {
       overview: () => `<h2>Welcome back${u.name ? ", " + esc(u.name.split(" ")[0]) : ""}</h2><p class="muted">Here’s a quick look at your account.</p>
-        <div class="tiles"><div class="tile"><div class="cat" style="color:var(--muted-2);font-size:11px;letter-spacing:.12em;text-transform:uppercase">Orders</div><div style="font-family:var(--font-display);font-size:28px;font-weight:700">2</div></div>
-        <div class="tile"><div style="color:var(--muted-2);font-size:11px;letter-spacing:.12em;text-transform:uppercase">Favourites</div><div style="font-family:var(--font-display);font-size:28px;font-weight:700">${wished.length}</div></div></div>`,
+        <div class="tiles"><div class="tile"><div class="cat" style="color:var(--muted-2);font-size:11px;letter-spacing:.12em;text-transform:uppercase">Orders</div><div style="font-family:var(--font-display);font-size:28px;font-weight:700;margin-top:8px">03</div></div>
+        <div class="tile"><div style="color:var(--muted-2);font-size:11px;letter-spacing:.12em;text-transform:uppercase">Favourites</div><div style="font-family:var(--font-display);font-size:28px;font-weight:700;margin-top:8px">${wished.length}</div></div></div>`,
       orders: () => `<h2>Orders</h2><p class="muted">Your recent orders.</p>
         <div class="order"><div><b>#SSC-2048</b><div class="l-meta" style="color:var(--muted);font-size:13px">2 items · ${money(168)}</div></div><span class="status">Delivered</span></div>
         <div class="order"><div><b>#SSC-2031</b><div class="l-meta" style="color:var(--muted);font-size:13px">1 item · ${money(95)}</div></div><span class="status">In transit</span></div>`,
       wishlist: () => `<h2>Favourites</h2><p class="muted">${wished.length ? "Pieces you’ve saved." : "You haven’t saved anything yet."}</p>` +
-        (wished.map(p => `<div class="wish-mini"><a class="media" href="product.html?id=${p.id}"><img src="${p.images[0]}" alt="${esc(p.name)}"></a><div style="flex:1"><b>${esc(p.name)}</b><div class="l-meta" style="color:var(--muted);font-size:13px">${money(p.price)}</div></div><a class="btn btn--sm btn--ghost" href="product.html?id=${p.id}">View</a></div>`).join("") || ""),
+        (wished.map(p => `<div class="wish-mini"><a class="media" href="product.html?id=${p.id}"><img src="${p.images[0]}" alt="${esc(p.name)}"></a><div style="flex:1"><b>${esc(p.name)}</b><div class="l-meta">${esc(p.cat)}</div></div></div>`).join("") || ""),
       settings: () => `<h2>Settings</h2><p class="muted">Update your details.</p>
         <div class="field"><label>Full name</label><input value="${esc(u.name || "")}" id="set-name"></div>
         <div class="field"><label>Email</label><input value="${esc(u.email)}" id="set-email"></div>
@@ -808,9 +740,6 @@
     $("#logout", root).onclick = () => { localStorage.removeItem("ssc_user"); renderAuth(root); toast("Signed out"); };
   }
 
-  /* ===================================================================
-     FORMS (newsletter + contact) — present on multiple pages
-     =================================================================== */
   function wireForms() {
     const valid = e => /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e);
     $$("[data-newsletter]").forEach(form => form.addEventListener("submit", e => {
@@ -829,9 +758,6 @@
     });
   }
 
-  /* ===================================================================
-     MOTION — scroll reveal, header behaviour, page transitions
-     =================================================================== */
   let io;
   function observeReveals(root = document) {
     if (reduceMotion()) { $$(".reveal", root).forEach(el => el.classList.add("in")); return; }
@@ -854,9 +780,7 @@
   }
 
   function pageTransitions() {
-    // Chromium animates cross-document navigation natively via CSS @view-transition.
     if ("startViewTransition" in document) return;
-    // Fallback fade for browsers without View Transitions.
     document.body.classList.add("tfb");
     requestAnimationFrame(() => document.body.classList.add("tin"));
     document.addEventListener("click", e => {
@@ -872,7 +796,6 @@
     });
   }
 
-  /* ----------------------------- INIT --------------------------------- */
   function setFavicon() {
     if (document.querySelector('link[rel="icon"][data-mono]')) return;
     const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
@@ -886,9 +809,6 @@
     document.head.appendChild(l);
   }
 
-  /* ===================================================================
-     SEARCH OVERLAY
-     =================================================================== */
   function buildSearch() {
     if ($("#search-overlay")) return;
     const el = document.createElement("div");
@@ -912,6 +832,7 @@
     });
     el.addEventListener("click", e => { if (e.target === el || e.target.closest("[data-close-search]")) closeSearch(); });
   }
+
   function runSearch(q) {
     const res = $("#search-results"), hint = $("#search-hint");
     if (!res) return;
@@ -924,6 +845,7 @@
     wireCards(res);
     res.querySelectorAll("[data-add], .media-link, .cn").forEach(n => n.addEventListener("click", closeSearch));
   }
+
   function openSearch() {
     buildSearch();
     const el = $("#search-overlay"); el.classList.add("open");
@@ -931,11 +853,9 @@
     const hint = $("#search-hint"); if (hint && !$("#search-input").value) hint.textContent = `Type to search ${PRODUCTS.length} products.`;
     setTimeout(() => $("#search-input")?.focus(), 40);
   }
+
   function closeSearch() { $("#search-overlay")?.classList.remove("open"); document.body.style.overflow = ""; }
 
-  /* ===================================================================
-     SIZE GUIDE
-     =================================================================== */
   const SIZE_GUIDE = {
     top: {
       title: "Tops",
@@ -950,6 +870,7 @@
       rows: [["28","71","76","94"],["30","76","77","99"],["32","81","78","104"],["34","86","79","109"],["36","91","80","114"]]
     }
   };
+
   function openSizeGuide(kind) {
     closeSizeGuide();
     const g = kind === "bottom" ? SIZE_GUIDE.bottom : SIZE_GUIDE.top;
@@ -975,11 +896,9 @@
     document.body.style.overflow = "hidden";
     el.addEventListener("click", e => { if (e.target === el || e.target.closest("[data-close-sg]")) closeSizeGuide(); });
   }
+
   function closeSizeGuide() { const el = $("#sizeguide-modal"); if (!el) return; el.classList.remove("open"); document.body.style.overflow = ""; setTimeout(() => el.remove(), 200); }
 
-  /* ===================================================================
-     RECENTLY VIEWED
-     =================================================================== */
   function pushRecent(id) {
     id = Number(id);
     let r = store.get("ssc_recent", []);
@@ -987,6 +906,7 @@
     r = r.filter(x => x !== id); r.unshift(id); r = r.slice(0, 12);
     store.set("ssc_recent", r);
   }
+
   function renderRecent(root, excludeId) {
     const sec = $("#recent-sec", root), host = $("#recent-grid", root);
     if (!sec || !host) return;
@@ -996,12 +916,11 @@
   }
 
   function init() {
-    // If a product photo fails to load, swap to a neutral placeholder (capture phase: error doesn't bubble)
     document.addEventListener("error", e => {
       const t = e.target;
       if (t && t.tagName === "IMG" && !t.dataset.fb) {
         t.dataset.fb = "1";
-        t.src = "https://picsum.photos/seed/ssc" + Math.floor(Math.random() * 99999) + "/800/1000";
+        t.src = "assets/products/placeholder.svg";
       }
     }, true);
 
@@ -1016,7 +935,6 @@
     pageTransitions();
     wireForms();
 
-    // open-cart / open-nav triggers (delegated, survives header rebuild)
     document.addEventListener("click", e => {
       if (e.target.closest("[data-open-cart]")) openCart();
       if (e.target.closest("[data-open-nav]")) openNav();
@@ -1039,3 +957,4 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 })();
+

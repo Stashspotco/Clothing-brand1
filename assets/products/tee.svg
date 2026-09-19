@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Tee placeholder">
+  <rect width="800" height="1000" fill="#f7f4f1"/>
+  <rect x="120" y="110" width="560" height="780" rx="36" fill="#ebe9e5"/>
+  <path d="M250 220l100-80h100l100 80 120 50v120l-60 20v260c0 58-47 105-105 105H295c-58 0-105-47-105-105V410l-60-20V270l120-50Z" fill="#f5f5f3" stroke="#1f2327" stroke-width="12"/>
+  <path d="M270 255h260l-20 90H290l-20-90Z" fill="#dcd9d3"/>
+  <path d="M290 455h220v280H290z" fill="#f0ece8"/>
+  <rect x="365" y="220" width="70" height="80" fill="#1f2327"/>
+  <text x="400" y="860" text-anchor="middle" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#1f2327" letter-spacing="8">TEE</text>
+</svg>
